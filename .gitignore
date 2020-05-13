@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Eclipse / IntelliJ related files
+.classpath
+.project
+.settings
+.idea
+.metadata
+*.iml
+*.ipr
