@@ -26,4 +26,34 @@ You get the idea.
 
 Feel free to submit a pull request if I've completely missed the boat on my "best practices", or, just use this project as the basis for your own "best practices" template for your own serverless projects.
 
+## Commands
 
+Run unit tests
+```bash
+yarn test
+```
+
+Deploy to AWS (script in package.json uses sls to deploy)
+```bash
+yarn deploy --aws-profile [your-aws-profile-name] --region [your-aws-region]
+
+# e.g.
+yarn deploy --aws-profile krisgholson --region us-east-2
+```
+
+Start local development server (using the serverless-offline plugin)
+```bash
+yarn start
+```
+
+I've included some bulleted high-level opinions below. There are also comments sprinkled throughout code and configuration to point to resources that I drew my opinions from. Thank you to all those serverless users and bloggers out there sharing their lessons learned! 
+
+## My Opinions
+* AWS Lambda is a game changer. It and other AWS managed services are the way to go to quickly deliver value to customers (and will almost always be less expensive when you are in the startup phase and proving out whether you have a viable application and company). You WILL lock yourself into AWS as a service provider with this approach; you'll be in good company though.
+* use [jest](https://jestjs.io/) for testing
+* use nodejs lambda functions (because javascript is eating the world)
+* pack your functions with webpack to ensure that the final code bundle is as small as possible (faster cold starts)
+
+
+## Resources
+* https://pages.awscloud.com/Optimizing-Lambda-Performance-for-Your-Serverless-Applications_2020_0316-SRV_OD.html
