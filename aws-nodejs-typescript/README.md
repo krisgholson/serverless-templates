@@ -38,7 +38,7 @@ Deploy to AWS (script in package.json uses sls to deploy)
 yarn deploy --aws-profile [your-aws-profile-name] --region [your-aws-region]
 
 # e.g.
-yarn deploy --aws-profile krisgholson --region us-east-2
+yarn deploy --aws-profile my_profile --region us-east-2
 ```
 
 Start local development server (using the serverless-offline plugin)
