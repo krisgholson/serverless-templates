@@ -35,3 +35,8 @@ jobs:
 
     - name: Build using serverless webpack plugin
       run: yarn package
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: serverless-deployment
+        path: .serverless
