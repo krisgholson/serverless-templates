@@ -34,4 +34,6 @@ jobs:
         yarn test
 
     - name: Build using serverless webpack plugin
-      run: sls package
+      run: |
+        yarn
+        sls package
