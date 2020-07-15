@@ -29,6 +29,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies and unit test
-    run: |
-      yarn
-      yarn test
+      run: |
+        yarn
+        yarn test
