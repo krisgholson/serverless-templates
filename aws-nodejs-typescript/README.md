@@ -63,3 +63,4 @@ I've included some bulleted high-level opinions below. There are also comments s
 * [AWS Serverless-First Function: Serverless for your Organization](https://www.twitch.tv/aws/video/633672692)
 * [AWS Serverless-First Function: Serverless for your Application](https://www.twitch.tv/aws/video/634697640)
 * https://aws.amazon.com/modern-apps/
+* https://serverless-stack.com/chapters/debugging-full-stack-serverless-apps.html
