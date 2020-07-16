@@ -60,3 +60,6 @@ I've included some bulleted high-level opinions below. There are also comments s
 ## Resources
 * https://pages.awscloud.com/Optimizing-Lambda-Performance-for-Your-Serverless-Applications_2020_0316-SRV_OD.html
 * https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
+* [AWS Serverless-First Function: Serverless for your Organization](https://www.twitch.tv/aws/video/633672692)
+* [AWS Serverless-First Function: Serverless for your Application](https://www.twitch.tv/aws/video/634697640)
+* https://aws.amazon.com/modern-apps/

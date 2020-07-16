@@ -14,7 +14,21 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'} # Set the default stage used. Default is dev
+  region: ${opt:region, 'us-east-1'} # Overwrite the default region used. Default is us-east-1
+  memorySize: 512 # Overwrite the default memory size for your use case. Default is 1024
+  timeout: 30 # The default is 6 seconds. Note: API Gateway current maximum is 30 seconds
   logRetentionInDays: 365 # 1 year log retention (hipaa requires 6)
+
+  # there are account limits on number of s3 buckets so
+  # consider reusing the same deployment bucket for all your serverless deployments
+  # you'll want to change the prefix below (serverless-templates-deployments-)
+  # to something meaningful to your app or company - s3 bucket names need to be GLOBALLY unique
+  deploymentBucket:
+    name: serverless-templates-deployments-${self:provider.stage}-${self:provider.region}
+    blockPublicAccess: true # Prevents public access via ACLs or bucket policies. Default is false
+    serverSideEncryption: AES256
+
   apiGateway:
     minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
   environment:
