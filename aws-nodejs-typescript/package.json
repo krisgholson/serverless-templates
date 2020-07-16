@@ -5,6 +5,7 @@
   "main": "handler.js",
   "scripts": {
     "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
+    "check": "eslint '*/**/*.{js,ts}' --quiet",
     "test": "jest",
     "package": "sls package",
     "deploy": "sls deploy",

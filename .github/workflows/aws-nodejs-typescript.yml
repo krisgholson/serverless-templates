@@ -28,10 +28,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies and unit test
+    - name: Install dependencies, unit test, and check code compliance
       run: |
         yarn
         yarn test
+        yarn check
 
     - name: Build using serverless webpack plugin
       run: yarn package

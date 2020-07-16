@@ -46,14 +46,15 @@ Start local development server (using the serverless-offline plugin)
 yarn start
 ```
 
-I've included some bulleted high-level opinions below. There are also comments sprinkled throughout code and configuration to point to resources that I drew my opinions from. Thank you to all those serverless users and bloggers out there sharing their lessons learned! 
+I've included some bulleted high-level opinions below. There are also comments sprinkled throughout code and configuration to point to resources that I drew my opinions from (or for more thorough coverage of configuration options). Thank you to all those serverless users and bloggers out there sharing their lessons learned! 
 
 ## My Opinions
 * AWS Lambda is a game changer. It and other AWS managed services are the way to go to quickly deliver value to customers (and will almost always be less expensive when you are in the startup phase and proving out whether you have a viable application and company). You WILL lock yourself into AWS as a service provider with this approach; you'll be in good company though.
-* use [jest](https://jestjs.io/) for testing
+* use [jest](https://jestjs.io/) for testing and code coverage (fail if less than 100 percent)
 * use nodejs lambda functions (because javascript is eating the world)
 * pack your functions with webpack to ensure that the final code bundle is as small as possible (faster cold starts)
-* lint with eslint (https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project)
+* lint with eslint and prettier
+* use github actions for CI
 
 
 ## Resources
