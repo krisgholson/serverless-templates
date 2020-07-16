@@ -53,7 +53,9 @@ I've included some bulleted high-level opinions below. There are also comments s
 * use [jest](https://jestjs.io/) for testing
 * use nodejs lambda functions (because javascript is eating the world)
 * pack your functions with webpack to ensure that the final code bundle is as small as possible (faster cold starts)
+* lint with eslint (https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project)
 
 
 ## Resources
 * https://pages.awscloud.com/Optimizing-Lambda-Performance-for-Your-Serverless-Applications_2020_0316-SRV_OD.html
+* https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
