@@ -1,3 +1,4 @@
+// https://eslint.org/docs/user-guide/configuring
 module.exports = {
     parser: '@typescript-eslint/parser', // Specifies the ESLint parser
     parserOptions: {
